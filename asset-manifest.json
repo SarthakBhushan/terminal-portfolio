@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sarthakbhushan.github.io/terminal-portfolio/static/css/main.4b436f4a.css",
+    "main.js": "/sarthakbhushan.github.io/terminal-portfolio/static/js/main.20a603b7.js",
+    "index.html": "/sarthakbhushan.github.io/terminal-portfolio/index.html",
+    "main.4b436f4a.css.map": "/sarthakbhushan.github.io/terminal-portfolio/static/css/main.4b436f4a.css.map",
+    "main.20a603b7.js.map": "/sarthakbhushan.github.io/terminal-portfolio/static/js/main.20a603b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b436f4a.css",
+    "static/js/main.20a603b7.js"
+  ]
+}

@@ -5,7 +5,7 @@ export default function Contact() {
 
   return (
     <div>
-      Email: <a href="mailto:sarthak@example.com" style={linkStyle}>sarthak@example.com</a>
+      Email: <a href="mailto:sarthakbhushan7s@gmail.com" style={linkStyle}>sarthakbhushan7s@gmail.com</a>
       <br />
       GitHub: <a href="https://github.com/sarthak" target="_blank" rel="noopener noreferrer" style={linkStyle}>
         github.com/sarthak

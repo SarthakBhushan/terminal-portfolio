@@ -1,9 +1,10 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Header() {
+  const linkStyle = { color: "white", textDecoration: "none" };
   return (
-    <header style={{ textAlign: "left", marginBottom: "20px" }}>
+    <header style={{ position:"relative",textAlign: "left", marginBottom: "20px" }}>
       <pre style={{ fontFamily: "monospace", color: "#00ffff", fontSize: "14px" }}>
 {String.raw`
   █████████                       █████    █████                █████     
@@ -21,15 +22,14 @@ export default function Header() {
       </pre>
 
       <div style={{ fontFamily: "monospace", color: "#00ffff", margin: "10px 0" }}>
-        {"> Welcome to my Portfolio! - Type help to see list of supported commands."}
+        > Welcome to my Portfolio! - Type{" "} <span style={linkStyle}> help </span> to see list of supported commands."
       </div>
-
-      <nav style={{ display: "flex", justifyContent: "left", gap: "20px" }}>
+      <div className="social-icons">    
         <a
           href="https://github.com/SarthakBhushan"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#00ffff" }}
+          className="icon-link"
         >
           <FaGithub size={28} />
         </a>
@@ -37,11 +37,18 @@ export default function Header() {
           href="https://www.linkedin.com/in/sarthakbhushan/"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#00ffff" }}
+          className="icon-link"
         >
           <FaLinkedin size={28} />
+        </a> 
+        <a href="https://www.instagram.com/sarthak_bhushan/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="icon-link"
+        >
+          <FaInstagram size={28}/>
         </a>
-      </nav>
+        </div>
     </header>
   );
 }

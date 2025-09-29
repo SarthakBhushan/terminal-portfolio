@@ -4,7 +4,10 @@
     --cursor: #00ffff;
 }
 html{
-    font-size: 18px;
+    font-size: 14px;
+    margin:0;
+    padding:0;
+    overflow: hidden;
 }
 body{
     margin: 0;
@@ -12,10 +15,43 @@ body{
     background: black;
     color: var(--text);
     font-family: "Courier New", monospace;
-    
 }
 
 .terminal{
     padding:20px;
     white-space: pre-wrap;
 }
+
+header{
+    position: relative;
+}
+
+.social-icons{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+@media(max-width: 768px){
+    .social-icons{
+        position: static;
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+}
+.portfolio-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a.icon-link{
+    color:#00ffff;
+    transition: color 0.3s ease;
+}
+a.icon-link:hover{
+    color: #ff00ff;
+}
+
